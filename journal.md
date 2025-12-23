@@ -8,8 +8,9 @@
 **Date:** Day 1  
 **Time Spent:** 3 hours  
 
-Today I focused on understanding how mudskippers move and why they are suitable as inspiration for an agricultural robot. I watched several videos and read articles about their pectoral fins and tail-based locomotion. I also started thinking about how this motion could help in muddy or high-salinity soil environments.  
-I decided early on that the robot should be able to interact with the soil directly, not just move on top of it.
+Today, I concentrated on finding out more information on how mudskipper fish move and how they can be used as models for an agricultural robot. I looked at some videos and articles that highlighted how they use their pectoral fins and tails. 
+At this point, I began considering how this technique can be used in aiding soil that is either muddy and wet or full of salinity.
+I knew early on that the robot would have the ability to interface directly with the soil, as opposed to just walking on top of it.
 
 ---
 
@@ -17,12 +18,11 @@ I decided early on that the robot should be able to interact with the soil direc
 **Date:** Day 2  
 **Time Spent:** 4 hours  
 
-I planned the overall system architecture today. I chose the Raspberry Pi Pico W as the main controller because it’s compact, powerful enough, and allows future wireless data transmission. I finalized the use of 5 servos:  
-- 2 for pectoral fins  
-- 1 for the tail  
-- 2 for the sensor placment  
-
-I also confirmed the use of pH and TDS sensors for soil analysis. I sketched how the sensors would need to move up and down to take measurements at different depths.  
+The system architecture was also planned for today. I settled for the Raspberry Pi Pico W for my primary controller, considering that I can connect it wirelessly in the future for data transmission. The final servos to be used are 5:
+- 2 for pectoral fins
+- 1 for the tail
+- 2 for sensor placement
+I also confirmed that pH and TDS sensors are used in analyzing soils. Iuating how these sensors will be required to move from top to bottom in order to measure at different intervals.
 
 ---
 
@@ -30,8 +30,8 @@ I also confirmed the use of pH and TDS sensors for soil analysis. I sketched how
 **Date:** Day 3  
 **Time Spent:** 3 hours  
 
-I started the 3D modeling process today. I began with the main body, focusing on keeping it compact but hollow so it could fit the electronics. The first version was too thin and wouldn’t realistically hold the servos, so I redesigned it with thicker walls.  
-Later in the session, I modified the body to allow two servos to be placed on opposite sides for the pectoral fins. This took longer than expected because of alignment issues.  
+I began the process of my 3D modeling today. I started off with the body, trying to make sure that it was compact and hollow enough to accommodate the electronics. The first design was a bit too slim and wouldn't really hold the servos, so I added thicker walls to the design.
+Later in the session, the body was changed to accommodate two servos placed on either side of the pectoral fins. This took longer than anticipated due to alignment constraints.
 ![Alt text](/Images/7.png)
 
 
@@ -41,8 +41,8 @@ Later in the session, I modified the body to allow two servos to be placed on op
 **Date:** Day 4  
 **Time Spent:** 2 hours  
 
-I designed custom servo holders that could be integrated directly into the body. My first attempt didn’t give enough clearance for servo movement, so I had to redo it.  
-By the end of the day, the servos fit correctly, and the body felt more “robot-like” rather than just a shell. This was a frustrating day, but it helped me understand mechanical constraints better.  
+I created customized holders for servos that could be incorporated right into the body. In my first attempt, I did not provide enough room for the servos to move, and I had to remake it.
+At the end of the day, the servos were in their proper positions, and it felt like having a “robot” as opposed to just having a “shell.” This has been a frustrating day, but it has helped me in understanding the limitations of mechanisms.
 ![Alt text](/Images/8.png)
 
 ---
@@ -51,8 +51,8 @@ By the end of the day, the servos fit correctly, and the body felt more “robot
 **Date:** Day 5  
 **Time Spent:** 3 hours  
 
-Today I modeled the pectoral fins, which act like the robot’s hands. I tried to mimic the wide, flat shape of real mudskipper fins.  
-I tested multiple shapes before settling on one that looked flexible and stable. I also ensured the fins could attach cleanly to the servo horns.  
+Today, I modeled the pectoral fins, which serve as "hands" for the robot. I attempted to replicate the broad, flat nature of a mudskipper's fins.
+I had to try different shapes to be satisfied with the final choice, which had to be flexible and stable. I had to make sure that it would be possible to easily connect the fins to the servo horns.
 
 ![Alt text](/Images/9.png)
 
@@ -62,8 +62,8 @@ I tested multiple shapes before settling on one that looked flexible and stable.
 **Date:** Day 6  
 **Time Spent:** 3 hours  
 
-I designed the tail, which is responsible for assisting movement and balance. At first, I wanted a complex segmented tail, but that felt unnecessary and hard to control.  
-I simplified it to a single flexible structure controlled by one servo. This decision saved time and made the motion easier to program later.  
+Tail design, which helps with movement and balance, was my design. Initially, I wanted to create a complex tail, but this seems rather unnecessary and difficult to manage.
+I was able to simplify this to a single flexible system that is controlled by a single servo motor. This move saves time when programming this function later on.
 
 ![Alt text](/Images/10.png)
 
@@ -73,9 +73,9 @@ I simplified it to a single flexible structure controlled by one servo. This dec
 **Date:** Day 7  
 **Time Spent:** 3 hours  
 
-This was one of the most challenging parts. I designed the seed planting mechanism to release seeds only when soil conditions are suitable.  
-The first mechanism jammed in the simulation, so I redesigned it with smoother channels. I also planned for a servo-driven gate system.  
-This mechanism is directly linked to the sensor readings, which makes it the “brain-meets-action” part of the robot.  
+This was one of the most tricky parts. I knew that I had to design the seed planting system to deliver seeds only when the soil is appropriate.
+The first one jammed in the simulation, so I rebuilt it with smoother channels. I am also designing a gate system driven by a servo motor.
+This is directly related to the readings from the sensors, which makes it the “brain-meets-action” component of a robot.
 
 ![Alt text](/Images/11.png)
 
@@ -85,8 +85,9 @@ This mechanism is directly linked to the sensor readings, which makes it the “
 **Date:** Day 8  
 **Time Spent:** 1 hours  
 
-I modified the main body again to include a dedicated sensor placement slot. I designed a vertical sliding system so the pH and TDS sensors could move up and down using a servo.  
-This part required careful spacing to avoid collisions with other components. After a few failed designs, I finally got a version that worked smoothly.  
+The main body is altered again to consider the slot for sensor placement. A vertical sliding system is created to enable the pH and TDS sensors to move up and down via the use of a servo.
+This component took a lot of attention so as not to crash other elements. After a few unsuccessful designs, I was able to create a functional one.
+
 
 ![Alt text](/Images/6.png)
 
@@ -123,3 +124,4 @@ I reviewed the entire project today, checking the 3D design, circuit, and system
 This project taught me a lot about mechanical design, electronics integration, and iterative problem-solving. Many early ideas didn’t make it into the final design, but they were essential for learning. The journal reflects not just what worked, but also what didn’t—and that’s what made the project meaningful.
 
 **Total Logged Time:** ~32 hours  
+
