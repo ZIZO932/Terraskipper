@@ -1,15 +1,13 @@
 # Mudskipper-Inspired Soft Robot for Agriculture
 
 ## Project Description
-This project is a mudskipper-inspired soft robot designed to work in muddy and high-salinity agricultural environments. Instead of using wheels, the robot moves using pectoral fins and a tail, similar to a real mudskipper.  
-The robot is also able to interact directly with the soil using pH and TDS sensors. Based on the sensor readings, it can decide when to activate a small seed-planting mechanism, making the system responsive rather than purely mechanical.
+This is a soft robot inspired by the mudskipper, created to operate in muddy and high-salt fields. The system does not employ wheels for propulsion but relies on the pectoral fins and the tail, the same as in the mudskipper.
+The robot can also interact with soil using pH and TDS sensors. The sensor helps it determine whether to engage in activities that will make it plant seeds using a small seed-planting mechanism. This makes it possible for the robot to be able to interact with soil.
 
 ---
 
 ## Why I Made This Project
-I made this project because I was interested in how nature solves problems that engineering struggles with. Mudskippers can move and survive in wet, unstable soil where normal robots would get stuck.  
-I wanted to explore whether copying this kind of movement could be useful in agriculture, especially in areas with muddy or salty soil. This project also helped me learn more about 3D design, electronics, and how small design mistakes can affect the whole system.
-
+The reason I was interested in this project was because I was curious whether it was possible to adapt a movement like this by simply copying it and see how it could be used in agriculture, particularly in regions where the ground is muddy or salty. This project was also a way for me to learn more about 3D designing and the electronics, as well as how a small mistake in the design can impact the overall system.
 ---
 
 ## 3D Model
@@ -57,5 +55,6 @@ This step helped me catch several connection mistakes before moving to physical 
 
 ## Final Notes
 This project is still a work in progress, but it represents a full design cycle from idea to system-level integration. Many designs failed or were changed along the way, and those mistakes were just as important as the final result.  
+
 
 
