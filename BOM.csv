@@ -1,0 +1,11 @@
+Item,Description,Qty,Unit Price (EGP),Unit Price (USD),Total Price (USD),URL,Running Total (USD)
+Raspberry Pi Pico W,MCU (Main Controller),1,1400,29.35,29.35,https://www.amazon.eg/-/en/Generic-Raspberry-Pi-Pico-W/dp/B0CBQDP8HY,29.35
+MG996R Servo,High Torque Servo Motor,5,200,4.19,20.97,https://www.ram-e-shop.com/ar/shop/servo-mg996-180-mg996r-servo-motor-180deg-11-kg-cm-metal-gears-7397?srsltid=AfmBOoq1zvLpgjLLOmXDFrNQpmj2SQrDjgcnsE8VNdSKkgjMb-rjCr2f,50.32
+pH Sensor,pH Measurement Sensor,1,1750,36.67,36.67,https://www.ram-e-shop.com/shop/kit-ph-meter-ph-analog-sensor-acidity-meter-kit-for-arduino-7167,86.99
+TDS Sensor,Dissolved Solids Sensor,1,575,12.05,12.05,https://www.ram-e-shop.com/shop/kit-tds-meter-tds-meter-analog-sensor-v1-0-total-dissolved-solids-sensor-meter-9194,99.04
+Breadboard & Wires,Prototyping Accessories,1,300,6.29,6.29,https://www.ram-e-shop.com/shop/bb2t4d-j140-bb-bb-2t4d-j140-breadboard-1660-tie-point-140-jumper-wire-metal-base-6755,105.33
+XL4015 Converter,Regulation Module,1,95,1.99,1.99,https://www.ram-e-shop.com/shop/dc-dc-101-dc-dc-step-down-voltage-converter-adjustable-5a-xl4015-5v-32vdc-to-0-8v-30vdc-sku-dc101-7258,107.32
+18650 Battery,Power Source,2,245,5.13,10.26,https://www.ram-e-shop.com/shop/battery-18650-lgcm-battery-lithium-li-ion-inr18650mh1-mh1-3200mah-10a-4-2-3-7-2-5v-rechargeable-9064,117.58
+MPU-6050,IMU,1,175,3.67,3.67,https://www.ram-e-shop.com/shop/kit-imu-mpu6050-gy521-imu-6-dof-mpu-6050-gyroscope-accelerometer-sensor-module-7076,121.25
+NEO-6M GPS,GPS Module,1,563,11.8,11.8,https://www.amazon.eg/-/en/NEO-6M-GPS-Module-HW-542A-High-Precision/dp/B0F92HKGBH,133.05
+,,,,,"This is the same GPS module on other retailer however, both have the same price",https://makerselectronics.com/product/ublox-hw-539-neo-6m-gps-module/?srsltid=AfmBOorZ5a90If9bXw3bXueIRVRr6BAAfuh6hryrSHD4mv6YlEpa6hi-,
