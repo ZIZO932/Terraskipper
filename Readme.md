@@ -1,29 +1,37 @@
-# Mudskipper-Inspired Soft Robot for Agriculture
+# TerraSkipper: early design
 
-## Project Description
-i made this robot because i was really interested in how mudskipper fish move around in places where regular animals or even robots would just get stuck in the mud. instead of using wheels which would just spin and sink i designed this to use pectoral fins and a tail to crutch along the ground. it also has these sensors that can check the ph and tds of the soil to see if its actually a good spot to plant anything. if the soil looks okay it has this little seed planting mechanism that drops a seed which makes it a lot more useful than just a robot that walks around for no reason. it was a huge challenge to get the movement right because copying nature is way harder than it looks.
+This is one of the early designs for TerraSkipper, a mudskipper-inspired robot for agriculture. I wanted to explore using fins and a tail to move across difficult ground, with a mechanism that lowers probes to take soil measurements.
 
----
+The design also explored a seed-dropping mechanism. This repo keeps the CAD, circuit files, and early control logic from that stage. The later build is in [TerraSkipper V2](https://github.com/ZIZO932/Terraskipper-V2).
 
-## Why I Made This Project
-the main reason i started this was to see if i could actually take a weird movement from nature and use it for something practical like farming in muddy or salty areas. i also really wanted to get better at 3d design and electronics because i knew i would make a lot of mistakes and i wanted to see if i could fix them. this project taught me that even a tiny mistake in the 3d model like making a wall too thin can ruin the whole thing later on. it was also a big wake up call when i realized my initial sensors were for water and i had to scramble to find soil probes that wouldn't just break the second they touched the dirt.
----
+## Why I started it
 
-## 3D Model
-the 3d model was a total headache and it took so many versions to get it right. i had to make the main body hollow so it could hold all the messy wires and the pico w but it also had to be strong enough to hold the five servos. the design has these custom holders for the servos that move the fins and the tail and i also had to build a specific vertical slider for the sensors. that slider was tough because it has to push the ph and tds probes into the soil which takes a lot more force than just dipping them in water. i also had to make sure the seed planting part wouldnt jam up every time it tried to drop something.
-![Alt text](/Images/1.png) ![Alt text](/Images/2.png) ![Alt text](/Images/3.png)
+I was interested in how mudskippers move through places where wheels can struggle. That gave me a starting point for a robot aimed at soil monitoring in the Nile Delta.
 
+A lot of the work was figuring out how the idea would fit into a physical body: room for the electronics, servo mounts, enough wall thickness for printing, and a slider that could lower the probes. I also had to rethink the sensors after realizing that the first ones I looked at were meant for water.
 
+## Mechanical design
 
----
+The body is hollow to make room for the controller and wiring. Servo holders support the fins and tail, and the vertical slider is intended to place the probes against the soil.
 
-## Wiring Diagram
-the wiring diagram was where i had to figure out how to connect everything without blowing up the pico w. it shows how the controller handles all five servos and where the data from the ph and tds sensors goes. i had to be really careful about the power because five servos pulling current at the same time can easily crash the system. i ended up using kicad to make a proper schematic and pcb because a breadboard was just becoming a nightmare of tangled wires. doing this helped me find a bunch of mistakes where i had wires crossing that would have definitely shorted out the whole thing if i hadn't caught them.
-![Alt text](/Images/s1.png) ![Alt text](/Images/pp1.png)
+![Body design](Images/1.png)
+![Assembly view](Images/2.png)
+![Mechanism view](Images/3.png)
 
----
+## Electronics
 
-## Bill of Materials (BOM)
+I used KiCad to work through the controller, servo, sensor, and power connections. Moving from a breadboard layout to a schematic made it easier to track the connections and plan the PCB.
+
+![Schematic](Images/s1.png)
+![PCB view](Images/pp1.png)
+
+## Code in this repo
+
+[code logic.py](code%20logic.py) is a conceptual simulation. It prints servo movements and uses example sensor readings to show the movement and measurement sequence. It doesn't control real hardware or collect live soil data.
+
+## Parts estimate
+
+These are the costs recorded for this design stage, rather than current supplier prices. The sensor listing and supplier links are kept from the original parts list.
 
 | Item | Description | Qty | Unit Price (EGP) | Unit Price (USD) | Total Price (USD) | URL | Running Total (USD) |
 |------|-------------|-----|------------------|------------------|-------------------|-----|---------------------|
@@ -36,11 +44,13 @@ the wiring diagram was where i had to figure out how to connect everything witho
 | MPU-6050 | IMU | 1 | 175 | 3.73 | 3.73 | https://www.ram-e-shop.com/shop/kit-imu-mpu6050-gy521-imu-6-dof-mpu-6050-gyroscope-accelerometer-sensor-module-7076 | 153.60 |
 | NEO-6M GPS | GPS Module | 1 | 563 | 12.00 | 12.00 | https://makerselectronics.com/product/ublox-hw-539-neo-6m-gps-module/?srsltid=AfmBOorZ5a90If9bXw3bXueIRVRr6BAAfuh6hryrSHD4mv6YlEpa6hi- | 165.60 |
 
+## Files
 
----
+- [CAD](CAD/) — SolidWorks assembly and STEP model
+- [KiCad schematic](Mudskipper%20Circuit%20Diagram%20SCHEMATICC.kicad_sch)
+- [KiCad PCB](Mudskipper%20Circuit%20Diagram%20SCHEMATICC.kicad_pcb)
+- [BOM](BOM.csv)
+- [Build journal](journal.md)
+- [Images](Images/)
 
-## Final Notes
-this project is definitely still something i am working on and it's far from perfect. looking back i can see how much i had to change like the whole sensor mounting system and the way the fins were shaped. the mistakes i made with the 3d prints and the circuit design were actually the most useful parts of the whole experience because they forced me to learn how to troubleshoot. it might not look like a professional robot yet but it represents a lot of hours of me just trying to get a plastic fish to plant seeds in the mud.
-
-
-
+The servo-driven prototype is documented in [Mudskipper](https://github.com/ZIZO932/Mudskipper), and the later DC-motor version is in [TerraSkipper V2](https://github.com/ZIZO932/Terraskipper-V2).
